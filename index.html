@@ -12,13 +12,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 <div class="container-fluid">
-    <div class="d-flex justify-content-center">
-        <div class="lg-row"><h1>Online.Library</h1>
-        <h1> Check Out</h1></div>
+
+    <div class="lg-col"><center><h1>Online.Library</h1>
+        <h1> Check Out</h1></center></div>
+
 <br><br>
-        <div class="form lg-row"><form action="thankyou.html" method="">
-           <table>
-            
+        <div class="form lg-col bg-info"><form action="thankyou.html" method="">
+            <div class="d-flex justify-content-center p-2 fw-bolder">
+         
+                <table border="1px" class="m-2">           
                     <tr>
                         <td><label for="lastname">Name:</label></td>
                         <td><input type="text" name="name" id="name" required></td>
@@ -30,10 +32,15 @@
                     <tr>
                         <td><label for="Regions">Region:</label></td>
                         <td> <select name="text" id="region">
-                            <option id="NCR" value="NCR">NCR</option>
+                            <option id="NCR" value=" "></option>
+                            <option  value="NCR">N C R</option>
                             <option  value="Region 1">Region 1</option>
                             <option  value="Region 2">Region 2</option>
                             <option  value="Region 3">Region 3</option>
+                            <option  value="Region 4">Region 4</option>
+                            <option  value="Region 5">Region 5</option>
+                            <option  value="Region 6">Region 6</option>
+                            <option  value="Region 7">Region 7</option>
                         </td>
                     </tr>
                     <tr>
@@ -42,6 +49,10 @@
                     </tr>
                     <tr>                      
                         <td><label for="Payment">Payment Method:</label></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>    
                         <td><input 
                                 type="radio" 
                                 name="payment" 
@@ -50,7 +61,8 @@
                                 onclick = "getRadio('Cash on Delivery')">
                                 <label for="cod">Cash on Delivery</label>
                             </td>
-                    <tr>  
+                    </tr>  
+                            
                             <td></td>
                             <td>
                                 <input type="radio" 
@@ -87,14 +99,15 @@
                                 Place Order
                             </button></td>
                         </tr>    
-                    </tr>
+                    
             
         </table>
+        </div>
     </form>
     </div>
 <!-- Button trigger modal -->
     <!-- Modal -->
-        <div  class="modal fade lg-row" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div  class="modal fade lg-col" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -128,6 +141,8 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Proceed</button>
+
+          </script>
         </div>
       </div>
     </div>
