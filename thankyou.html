@@ -18,20 +18,24 @@
       crossorigin="anonymous"
     ></script>
 
-    <div class="container-fluid bg-info">
+    <div class="container-fluid">
       <br />
 
       <!-- Flex  -->
-      <div class="d-xl-flex flex-row">
-        <div class="bg-warning p-3 flex-fill">
-          <div class="col bg-warning p-2 gap=4">
-            <div class="flex-shrink p-3">
-              <img
-                src="images/thankyou.jpg"
-                class="rounded float-center w-100"
-              />
+      <div class="d-xl-flex flex-col justify-content-center">
+        <div class="flex-shrink row bg-warning justify-content-center rounded-3" style="width:400px ;">
+          <img src="images/thankyou.jpg" class="rounded p-2" style="width: 400px;"/>
+            <div class="row text-center">
+                <h4>Your order : No. 12345 has been placed...</h4>
+                <h5>You will receive your order within 2 to 3 days period.</h5>
+
             </div>
-          </div>
+          <div class="p-2">
+          <center><button type="button" class="btn btn-primary" onclick="javascript:window.close()">
+            close </button></center>
+        </div>
+        </div>
+        
         </div>
       </div>
     </div>

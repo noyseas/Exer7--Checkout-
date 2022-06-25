@@ -17,10 +17,11 @@
         <h1> Check Out</h1></center></div>
 
 <br><br>
-        <div class="form lg-col bg-info"><form action="thankyou.html" method="">
-            <div class="d-flex justify-content-center p-2 fw-bolder">
+        <div class="form lg-col "><form action="#" method="">
+
+            <div class="d-flex row4 justify-content-center fw-bolder">
          
-                <table border="1px" class="m-2">           
+                <table border="1px">           
                     <tr>
                         <td><label for="lastname">Name:</label></td>
                         <td><input type="text" name="name" id="name" required></td>
@@ -114,12 +115,14 @@
                 <h5 class="modal-title" id="staticBackdropLabel">Kindly Review Your details...</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+                <<form action="thankyou.html" method="">
                     <div class="modal-body">
                         <h4 id="dName"></h4>
                         <h4 id="dAdd"></h4>
                         <h4 id="dReg"></h4>
                         <h4 id="dContact"></h4>
-                        <h4 id="dPayment"></h4>
+                    
+                        <h4>Mode of Payment :<h4 id="dPayment"></h4></h4>
                     </div>
        
        <script>
@@ -135,12 +138,14 @@
                     document.getElementById('dContact').innerHTML="Contact :"+ buyerContact;
                     }
             function getRadio(cardValue){
-                    document.getElementById('dPayment').innerHTML="Mode of Payment : "+ cardValue;
+                    document.getElementById('dPayment').innerHTML=""+ cardValue;
                     }
+     
         </script>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Proceed</button>
+          <button type="submit" class="btn btn-primary" >Proceed</button>
+        </form>
 
           </script>
         </div>
